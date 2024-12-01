@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href="{% static 'css/StyleRegistration.css' %}">
+</head>
+
+<body>
+    <form id='registrForm' method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+        <div>
+            <label for='name'>Ведите своё имя:</label>
+            <input type="text" id='name' name='username' required minlength="2" maxlength="8" size="20" required />
+        </div>
+        <div>
+            <label for='Email'>Ведите свой Email:</label>
+            <input type="text" id='Email' name='email' required minlength="2" maxlength="20" size="20" required />
+        </div>
+        <div>
+            <label for='password'>Придумайте пароль:</label>
+            <input type="password" id='password' name='password1' required minlength="2" maxlength="20" size="20"
+                required />
+        </div>
+        <div>
+            <label for='password1'>Подтвердите пароль:</label>
+            <input type="password" id='password1' name='password2' required minlength="2" maxlength="20" size="20"
+                required />
+        </div>
+        <div>
+            <button type="submit" class="register-btn">
+                Слить деньги
+            </button>
+        </div>
+    </form>
+    <div>
+        <img class='Satoru' src="{% static 'images/Satoru.jpg' %}">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitRun</title>
+    <link rel='stylesheet' href="{% static 'css/StyleUnitCase.css' %}">
+    <script>
+        const images = [
+            "{% static 'images/unitcase_folder/1.png' %}",
+            "{% static 'images/unitcase_folder/2.png' %}",
+            "{% static 'images/unitcase_folder/3.png' %}",
+            "{% static 'images/unitcase_folder/4.png' %}",
+            "{% static 'images/unitcase_folder/5.png' %}",
+            "{% static 'images/unitcase_folder/6.png' %}",
+            "{% static 'images/unitcase_folder/7.png' %}",
+            "{% static 'images/unitcase_folder/8.png' %}",
+            "{% static 'images/unitcase_folder/9.png' %}",
+            "{% static 'images/unitcase_folder/10.png' %}",
+            "{% static 'images/unitcase_folder/11.png' %}",
+            "{% static 'images/unitcase_folder/12.png' %}",
+            "{% static 'images/unitcase_folder/13.png' %}",
+            "{% static 'images/unitcase_folder/14.png' %}",
+            "{% static 'images/unitcase_folder/15.png' %}",
+            "{% static 'images/unitcase_folder/16.png' %}",
+            "{% static 'images/unitcase_folder/17.png' %}",
+            "{% static 'images/unitcase_folder/18.png' %}"
+        ];
+    </script>
+
+    <script src="{% static 'js/spend.js' %}"></script>
+    {% csrf_token %}
+</head>
+
+<body style="background-color:#121f32;">
+
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <nav>
+            <button class="icon">
+                <a href="{% url 'home' %}">UnitRun</a>
+            </button>
+            <a href="{% url 'profile' %}"><button class="Profile">Профиль</button></a>
+            <a href="{% url 'home' %}"><button class="Case">Лудка</button></a>
+            <a href="{% url 'tapalka' %}"><button class="Click">Тапалка</button></a>
+        </nav>
+    </header>
+    <!-- Картинки -->
+    <div class='imag'>
+        <img class='Vova' width="120px" height="120px"
+            src="{% static 'images\Sprites\UnitCase\ВоваВатолин(Обычный).png' %}">
+        <p class='VovaWords'>Вова <br> Ватолин <br>(Обычный)</p>
+        <img class='Danil' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ДаниилРудков(Обычный).png' %}">
+        <p class='DanilWirds'> Данил <br>Рудков<br>(Обычный)</p>
+        <img class='Aleks' width="100px" height="100px" src="{% static 'images\Sprites\UnitCase\Aleks.png' %}">
+        <p class='AleksWords'> Александр <br>Денисов<br>(Обычный)</p>
+        <img class='Nikolai' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\НиколайАристархов(Редкий).png' %} ">
+        <p class='NikolaiWords'> Николай<br>Аристархов<br>(Редкий)</p>
+        <img class='Vika' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ВикторияВандышева(Редкий).png' %} ">
+        <p class='VikaWords'> Виктория <br>Вандышева<br>(Редкий)</p>
+        <img class='David' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ДавидДедсек(Редкий).png' %}">
+        <p class='DavidWords'> Давид <br>Дедсек<br>(Редкий)</p>
+        <img class='Ivan' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ИванМарус(Редкий).png' %}">
+        <p class='IvanWords'> Иван<br>Марус<br>(Редкий)</p>
+        <img class='Semen' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\СеменПудовкинф(Редкий).png' %}">
+        <p class='SemenWords'> Семён<br>Пудовкин<br>(Редкий)</p>
+        <img class='Sofa' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\СoфьяПетрова(Эпик).png' %}">
+        <p class='SofaWords'> Софья<br>Петрова<br>(Эпический)</p>
+        <img class='Ilia' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ИльяЛитвинов(Эпик).png' %} ">
+        <p class='IliaWords'> Илья<br>Литвинов<br>(Эпический)</p>
+        <img class='Vania' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ИванОвчиников(Эпик).png' %} ">
+        <p class='VaniaWords'> Иван<br>Овчиников<br>(Эпический)</p>
+        <img class='Egor' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ЕгорБойков(Эпик).png' %} ">
+        <p class='EgorWords'> Егор<br>Бойков<br>(Эпический)</p>
+        <img class='Yana' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ЯнаТройнова(Лега).png' %}">
+        <p class='YanaWords'> Яна<br>Тройнова<br>(Легендарка)</p>
+        <img class='Nastia' width="100px" height="100px" src="{% static 'images\Sprites\UnitCase\Настякуракина.png' %}">
+        <p class='NastiaWords'> Настя<br>Куракина<br>(Легендарка)</p>
+        <img class='Marina' width="100px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\МарияСотрихина.png' %}">
+        <p class='MarinaWords'> Мария<br>Сотрихина<br>(Легендарка)</p>
+        <img class='Daniil' width="150px" height="100px"
+            src="{% static 'images\Sprites\UnitCase\ДанилАбаслямов.png' %}">
+        <p class='DaniilWords'> Данил<br>Абсалямов<br>(Легендарка)</p>
+        <img class='Andrei' width="100px" height="100px" src="{% static 'images\Sprites\UnitCase\Andrei.png' %}">
+        <p class='AndreiWords'> Андрей<br>Стрижов<br>(Отец)</p>
+
+    </div>
+    <button class='twist' id="spend" data-cost="700">700</button>
+    <div id="image-container" class="drop"></div>
+    <img class='icon1' width="80px" height="80px" src="{% static 'images/unit.svg' %}" alt="UnitRun">
+</body>
+
+</html>

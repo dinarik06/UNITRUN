@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitRun</title>
+    <link rel='stylesheet' href="{% static 'css/StyleCatCase.css' %}">
+</head>
+
+<body style="background-color:#121f32;">
+
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <nav>
+            <button class="icon">
+                <a href="{% url 'home' %}">UnitRun</a>
+            </button>
+            <a href="{% url 'profile' %}"><button class="Profile">Профиль</button></a>
+            <a href="{% url 'home' %}"><button class="Case">Лудка</button></a>
+            <a href="{% url 'tapalka' %}"><button class="Click">Тапалка</button></a>
+        </nav>
+    </header>
+    <div class='im'>
+        <img class='Ycot' width="120px" height="120px" src="{% static 'images\Sprites\CatCase\УлыбчивыйКот.png' %}">
+        <p class='YcotWords'>Улыбчивый<br>Кот<br>(Легендарный)</p>
+        <img class='Rcot' width=" 120px" height="120px" src="{% static 'images\Sprites\CatCase\РетроКот (2).png' %}">
+        <p class='RcotWords'>Ретро<br>Кот<br>(Легендарный)</p>
+        <img class='Raincot' width="120px" height="120px" src="{% static 'images\Sprites\CatCase\РайнКот (2).png' %}">
+        <p class='RaincotWords'>Рейн<br>Кот<br>(Легендарный)</p>
+        <img class='Pcot' width="120px" height="120px" src="{% static 'images\Sprites\CatCase\Приятель (2).png' %}">
+        <p class='PcotWords'>Приятель<br>Кот<br>(Легендарный)</p>
+        <img class='Lcot' width="120px" height="120px" src="{% static 'images\Sprites\CatCase\ЛайтКот.png' %}">
+        <p class='LcotWords'>Лайт<br>Кот<br>(Легендарный)</p>
+        <img class='Zcot' width="160px" height="160px" src="{% static 'images\Sprites\CatCase\ZontCat.png' %}">
+        <p class='ZcotWords'>Зонтик<br>Кот<br>(Легендарный)</p>
+        <img class='Scot' width="120px" height="120px" src="{% static 'images\Sprites\CatCase\StrongCat (2).png' %}">
+        <p class='ScotWords'>Мощный<br>Кот<br>(Легендарный)</p>
+        <img class='Polcot' width="120px" height="120px" src="{% static 'images\Sprites\CatCase\PoliceCat.png' %}">
+        <p class='PolcotWords'>Кот<br>полицейский<br>(Легендарный)</p>
+        <button class='twist4' id="spend" onclick="location.href =''">700</button>
+    </div>
+    <img class='icon1' width="80px" height="80px" src="{% static 'images/unit.svg' %}" alt="UnitRun">
+</body>
+
+</html>

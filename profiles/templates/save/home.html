@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href="{% static 'css/StylesSait.css' %}">
+    <link rel='stylesheet' href="{% static 'css/StyleTapalka.css' %}">
+    <link rel='stylesheet' href="{% static 'css/StyleProfile.css' %}">
+    <div>
+        <div>
+            <a href="{% url 'profile' %}">
+                <button class='Profile'>
+                    Профиль
+                </button>
+            </a>
+
+        </div>
+        <div>
+            <a href="{% url 'home' %}">
+                <button class='Case'>
+                    Лудка
+                </button>
+            </a>
+        </div>
+        <div>
+
+            <a href="{% url 'tapalka' %}">
+                <button class='Click'>
+                    Тапалка
+                </button>
+            </a>
+        </div>
+        <div>
+            <button class='icon'>
+                <a href="{% url 'home' %}">
+                    UnitRun
+                </a>
+            </button>
+        </div>
+        <div>
+            <a href=''>
+                <img class='LiveCase' width="200px" height="200px" src="{% static 'images/livemarch_case.png' %}">
+            </a>
+        </div>
+        <div>
+            <a href=''>
+                <img class='UnitCase' width="200px" height="200px" src="{% static 'images/unitcase.png' %}">
+            </a>
+        </div>
+    </div>
+</head>
+
+<body style="background-color:#87CEFA;">
+    <img width="80px" height="80px" src="{% static 'images/unit.svg' %}">
+</body>
+
+</html>

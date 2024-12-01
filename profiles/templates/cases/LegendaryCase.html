@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitRun</title>
+    <link rel='stylesheet' href="{% static 'css/StyleLegendaryCase.css' %}"">
+</head>
+<body style=" background-color:#121f32;">
+
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <nav>
+            <button class="icon">
+                <a href="{% url 'home' %}">UnitRun</a>
+            </button>
+            <a href="{% url 'profile' %}"><button class="Profile">Профиль</button></a>
+            <a href="{% url 'home' %}"><button class="Case">Лудка</button></a>
+            <a href="{% url 'tapalka' %}"><button class="Click">Тапалка</button></a>
+        </nav>
+    </header>
+    <!-- Картинки -->
+    <div class='image'>
+        <img class='Vadim' width="170px" height="170px" src="{% static 'images\Sprites\LegendCase\вадим.png' %}">
+        <p class='VadimWords'>Вадим <br> Сидоров <br>(Легендарный)</p>
+        <img class='Vadim1' width="170px" height="170px"
+            src="{% static 'images\Sprites\LegendCase\вадим-роспись.png' %}">
+        <p class='VadimWords1'>Вадим <br> Сидоров <br>(Легендарный с росписью)</p>
+        <img class='Sanya' width="120px" height="120px" src="{% static 'images\Sprites\LegendCase\Александр.png' %}">
+        <p class='SanyaWords'>Александр <br> Панов <br>(Легендарный)</p>
+        <img class='Sanya1' width="160px" height="120px"
+            src="{% static 'images\Sprites\LegendCase\Александр Роспись.png' %}">
+        <p class='SanyaWords1'>Александр <br> Панов<br>(Легендарный с росписью)</p>
+        <img class='Dimas' width="120px" height="120px"
+            src="{% static 'images\Sprites\LegendCase\Дима-Photoroom.png' %}">
+        <p class='DimasWords'>Дмитрий <br> Добычкин <br>(Легендарный)</p>
+        <img class='Dimas1' width="120px" height="120px"
+            src="{% static 'images\Sprites\LegendCase\Дима-Роспись.png' %}">
+        <p class='DimasWords1'>Дмитрий <br> Добычкин<br>(Легендарный с росписью)</p>
+        <img class='Dinar' width="120px" height="120px" src="{% static 'images\Sprites\LegendCase\Динар.png' %}">
+        <p class='DinarWords'>Динар <br> Нурисламов <br>(Легендарный)</p>
+        <img class='Dinar1' width="120px" height="120px"
+            src="{% static 'images\Sprites\LegendCase\Динар-Роспись.png' %}">
+        <p class='DinarWords1'>Динар <br> Нурисламов<br>(Легендарный с росписью)</p>
+        <button class='twist1' id="spend" onclick="location.href =''">500</button>
+    </div>
+    <img class='icon1' width="80px" height="80px" src="{% static 'images/unit.svg' %}" alt="UnitRun">
+
+    </body>
+
+</html>

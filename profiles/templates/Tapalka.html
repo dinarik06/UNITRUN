@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href="{% static 'css/StylesSait.css' %}">
+    <link rel='stylesheet' href="{% static 'css/StyleTapalka.css' %}">
+    <link rel='stylesheet' href="{% static 'css/StyleProfile.css' %}">
+    <div>
+        <header class="navbar">
+            <nav>
+                <button class="icon">
+                    <a href="{% url 'home' %}">UnitRun</a>
+                </button>
+                <div>
+                    <img class="icon1" width="80px" height="80px" src="{% static 'images/unit.svg' %}">
+                </div>
+                <a href="{% url 'profile' %}"><button class="Profile">Профиль</button></a>
+                <a href="{% url 'home' %}"><button class="Case">Лудка</button></a>
+                <a href="{% url 'tapalka' %}"><button class="Click">Тапалка</button></a>
+            </nav>
+        </header>
+
+    </div>
+</head>
+
+<body style="background-color:#87CEFA;">
+
+    <button class="click-btn" onclick="incrementClick()">
+        <img id="button" class='Coin' src="{% static 'images/ucoin.png' %}">
+    </button>
+    <button class='conclusion' onclick="sendClicks()">
+        Вывод Юкоинов
+    </button>
+    <p>Ваш баланс: <span id="balance">0</span></p>
+    <script src="{% static 'js/get_coins.js' %}"></script>
+</body>
+
+</html>

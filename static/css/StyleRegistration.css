@@ -1,0 +1,14 @@
+body {
+    background: #87CEFA;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Satoru {
+    position: absolute;
+    width: 500px;
+    height: 750px;
+    left: 500px;
+    top: 150px;
+}

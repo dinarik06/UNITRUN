@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href="{% static 'css/StylesSait.css' %}">
+    <link rel='stylesheet' href="{% static 'css/StyleTapalka.css' %}">
+    <link rel='stylesheet' href="{% static 'css/StyleProfile.css' %}">
+    <div>
+        <div>
+            <a href="{% url 'profile' %}">
+                <button class='Profile'>
+                    Профиль
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="{% url 'home' %}">
+                <button class='Case'>
+                    Лудка
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="{% url 'tapalka' %}">
+                <button class='Click'>
+                    Тапалка
+                </button>
+            </a>
+        </div>
+        <div>
+            <button class='icon'>
+                <a href="{% url 'home' %}">
+                    UnitRun
+                </a>
+            </button>
+        </div>
+    </div>
+</head>
+
+<body style="background-color:#87CEFA;">
+    <img width="80px" height="80px" src="{% static 'images/unit.svg' %}">
+    <div class='conteiner profile'>
+        <h1>
+            Профиль
+        </h1>
+    </div>
+    <div class='avatar'>
+        <img src=''>
+    </div>
+    <div class='h22' id="Account">
+        <h2>
+            Количество Юкоинов
+        </h2>
+    </div>
+    <div class='h3'>
+        <strong>{{ coins }}</strong>
+    </div>
+</body>
+
+</html>

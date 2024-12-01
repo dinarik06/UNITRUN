@@ -1,0 +1,111 @@
+a { 
+    text-decoration: none;
+    color:#000080;
+}
+@font-face {
+    font-family: 'Ablation Black';
+    src: url('{% static "fonts/AblationBlack.otf" %}') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.Profile {
+    padding: 10px;
+    margin-bottom: 12px;
+    background-size: 7px;
+    background-color: #4169E1;
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    width: 70px;
+    border:none;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    border-radius:10px;
+    font-family: 'Ablation Black';
+    font-size: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.Profile:hover {
+    background-color: #191970;
+    transition: 0.7s;
+}
+.Profile:active {
+    background-color: #7B68EE;
+}
+.Case {
+    padding: 10px;
+    margin-bottom: 12px;
+    background-size: 7px;
+    background-color: #4169E1;
+    position: absolute;
+    right: 90px;
+    font-size: 13px;
+    width: 70px;
+    border:none;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    border-radius:10px;
+    font-family: 'Ablation Black';
+    font-size: 10px;
+    cursor: pointer;
+}
+.Case:hover {
+    background-color: #191970;
+    transition: 0.7s;
+}
+.Case:active {
+    background-color: #7B68EE;
+}
+.Click {
+    padding: 10px;
+    margin-bottom: 12px;
+    background-size: 7px;
+    background-color: #4169E1;
+    position: absolute;
+    right: 170px;
+    font-size: 13px;
+    width: 70px;
+    border:none;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    border-radius:10px;
+    font-family: 'Ablation Black';
+    font-size: 10px;
+    cursor: pointer;
+}
+.Click:hover {
+    background-color: #191970;
+    transition: 0.7s;
+}
+.Click:active {
+    background-color: #7B68EE;
+}
+.icon {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #87CEFA;
+    font-size: 30px;
+    position: absolute;
+    left: 100px;
+    border: 0px;
+    border-color: #87CEFA;
+    font-family: 'Ablation Black';
+}
+.LiveCase {
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+.LiveCase:hover {
+    width: 220px;
+    height: 220px;
+    transition: 0.7s;
+}
+.UnitCase {
+    position: absolute;
+    left: 400px;
+    top: 300px;
+}
+.UnitCase:hover {
+    width: 220px;
+    height: 220px;
+    transition: 0.7s;
+}

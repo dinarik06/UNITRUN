@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitRun</title>
+    <link rel='stylesheet' href="{% static 'css/StylesSait.css' %}"> <!-- Подключаем внешний CSS файл -->
+</head>
+
+<body style="background-color:#121f32;">
+
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <nav>
+            <button class="icon">
+                <a href="{% url 'home' %}">UnitRun</a>
+            </button>
+            <a href="{% url 'profile' %}"><button class="Profile">Профиль</button></a>
+            <a href="{% url 'home' %}"><button class="Case">Лудка</button></a>
+            <a href="{% url 'tapalka' %}"><button class="Click">Тапалка</button></a>
+        </nav>
+    </header>
+
+    <!-- Изображения -->
+    <div>
+        <div>
+            <a href="{% url 'liveapril_case' %}"><img class="LiveCase" src="{% static 'images/livemarch_case.png' %}"
+                    alt="liveapril_case"></a>
+            <p class='cost'>200</p>
+            <p class='word'>Live April Case</p>
+        </div>
+        <div>
+            <a href="{% url 'unit_case' %}"><img class="UnitCase" src="{% static 'images/unitcase.png' %}"
+                    alt="unit_case"></a>
+            <p class='cost1'>700</p>
+            <p class='word1'>Unit Case</p>
+        </div>
+        <div>
+            <a href="{% url 'legendary_case' %}"><img class="Winner"
+                    src="{% static 'images/Sprites/LegendCase/winnercase.png' %}" alt="winner_case"></a>
+            <p class='cost2'>500</p>
+            <p class='word2'>Legendary Case</p>
+        </div>
+        <div>
+            <a href=""><img class="PS2" src="{% static 'images/Sprites/NormalCase/ps2case.png' %}" alt="PS2"></a>
+            <p class='cost3'>300</p>
+            <p class='word3'>XДропа нетX</p>
+        </div>
+        <div>
+            <a href="{% url 'cat_case' %}"><img class="CatCase"
+                    src="{% static 'images/Sprites/CatCase/catcase.png' %}"></a>
+            <p class='cost4'>700</p>
+            <p class='word4'>Cat Case</p>
+        </div>
+    </div>
+
+    <!-- Логотип или иконка -->
+    <img class='icon1' width="80px" height="80px" src="{% static 'images/unit.svg' %}" alt="UnitRun">
+
+</body>
+
+</html>
